@@ -1,0 +1,568 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ana Yemekler"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Dolma -->
+        <ImageView
+            android:id="@+id/dolma_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/dolma"
+            android:scaleType="centerCrop"
+            android:contentDescription="Dolma Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolma - Taze sebzelerle doldurulmuş dolma."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 180 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_dolma"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Pilav -->
+        <ImageView
+            android:id="@+id/pilav_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pilav"
+            android:scaleType="centerCrop"
+            android:contentDescription="Pilav Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilav - Taze sebzelerle hazırlanmış pilav."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 150 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_pilav"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Mantı -->
+        <ImageView
+            android:id="@+id/manti_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/manti"
+            android:scaleType="centerCrop"
+            android:contentDescription="Mantı Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mantı - Yoğurtlu sos ile servis edilen geleneksel mantı."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 220 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_manti"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Musakka -->
+        <ImageView
+            android:id="@+id/musakka_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/musakka"
+            android:scaleType="centerCrop"
+            android:contentDescription="Musakka Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Musakka - Patlıcan, kıyma ve domates soslu musakka."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 190 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_musakka"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- İmam Bayıldı -->
+        <ImageView
+            android:id="@+id/imam_bayildi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/imam_bayildi"
+            android:scaleType="centerCrop"
+            android:contentDescription="İmam Bayıldı Görseli"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmam Bayıldı - Zeytinyağlı patlıcan yemeği."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 210 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <Button android:id="@+id/btn_add_imam_bayildi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Karışık Izgara -->
+        <ImageView
+            android:id="@+id/karisik_izgara_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/karisik_izgara"
+            android:scaleType="centerCrop"
+            android:contentDescription="Karışık Izgara Görseli"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karışık Izgara - Çeşitli etlerin ızgarada pişirilmiş hali."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 300 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_add_karisik_izgara"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Adana Kebabı -->
+        <ImageView android:id="@+id/adana_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/adana"
+            android:scaleType="centerCrop"
+            android:contentDescription="Adana Kebabı Görseli"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adana Kebabı - Baharatlı kıyma ile hazırlanan lezzetli kebap."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 250 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <Button android:id="@+id/btn_add_adana"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Urfa Kebabı -->
+        <ImageView
+            android:id="@+id/urfa_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/urfa"
+            android:scaleType="centerCrop"
+            android:contentDescription="Urfa Kebabı Görseli"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urfa Kebabı - Baharatsız kıyma ile hazırlanan hafif kebap."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 240 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <Button android:id="@+id/btn_add_urfa"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+
+        <!-- Karışık Makarna -->
+        <ImageView
+            android:id="@+id/karisik_makarna_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/karisik_makarna"
+            android:scaleType="centerCrop"
+            android:contentDescription="Karışık Makarna Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karışık Makarna - Çeşitli sebzeler ve soslarla zenginleştirilmiş makarna."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 160 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_karisik_makarna"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Tavuklu Makarna -->
+        <ImageView
+            android:id="@+id/tavuklu_makarna_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tavuklu_makarna"
+            android:scaleType="centerCrop"
+            android:contentDescription="Tavuklu Makarna Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tavuklu Makarna - Tavuk ve soslarla zenginleştirilmiş makarna."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 170 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_tavuklu_makarna"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Lahmacun -->
+        <ImageView
+            android:id="@+id/lahmacun_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/lahmacun"
+            android:scaleType="centerCrop"
+            android:contentDescription="Lahmacun Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lahmacun - İnce hamur üzerine baharatlı kıymalı harç."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 100 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_lahmacun"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Pide -->
+        <ImageView
+            android:id="@+id/pide_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pide"
+            android:scaleType="centerCrop"
+            android:contentDescription="Pide Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pide - Çeşitli malzemelerle hazırlanan geleneksel pide."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 120 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_pide"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Hamburger -->
+        <ImageView
+            android:id="@+id/hamburger_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/hamburger"
+            android:scaleType="centerCrop"
+            android:contentDescription="Hamburger Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hamburger - Et köftesi, sebzeler ve soslarla hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 150 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_hamburger"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Pizza -->
+        <ImageView
+            android:id="@+id/pizza_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pizza"
+            android:scaleType="centerCrop"
+            android:contentDescription="Pizza Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza - Çeşitli malzemelerle hazırlanmış pizza."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 200 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_pizza"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Et Döner -->
+        <ImageView
+            android:id="@+id/et_doner_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/et_doner"
+            android:scaleType="centerCrop"
+            android:contentDescription="Et Döner Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Et Döner - Geleneksel döner eti."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 180 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_et_doner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Tavuk Döner -->
+        <ImageView
+            android:id="@+id/tavuk_doner_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tavuk_doner"
+            android:scaleType="centerCrop"
+            android:contentDescription="Tavuk Döner Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tavuk Döner - Geleneksel tavuk döner eti."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 150 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_tavuk_doner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- İskender -->
+        <ImageView
+            android:id="@+id/iskender_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/iskender"
+            android:scaleType="centerCrop"
+            android:contentDescription="İskender Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İskender - Döner eti, yoğurt ve soslarla servis edilen."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 220 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_iskender"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+
+        <Button
+            android:id="@+id/btn_sepetim"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepetim"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

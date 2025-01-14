@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/sepet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sepetim"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Sepet içeriği burada listelenecek -->
+        <LinearLayout
+            android:id="@+id/urun_listesi_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp" />
+
+        <!-- Toplam Tutar -->
+        <TextView
+            android:id="@+id/total_tutar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam Tutar: 0 TL"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Butonlar altta yer alacak -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <!-- Siparişi Tamamla butonu -->
+            <Button
+                android:id="@+id/btn_siparisi_tamamla"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Siparişi Tamamla"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp" />
+
+            <!-- Menüye Git butonu -->
+            <Button
+                android:id="@+id/btn_menuye_git"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Menüye Git"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

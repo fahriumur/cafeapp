@@ -1,0 +1,453 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İçecekler"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Cola -->
+        <ImageView
+            android:id="@+id/cola_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cola"
+            android:scaleType="centerCrop"
+            android:contentDescription="Cola Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cola - Serinletici gazlı içecek."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 60 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_cola"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Fanta -->
+        <ImageView
+            android:id="@+id/fanta_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/fanta"
+            android:scaleType="centerCrop"
+            android:contentDescription="Fanta Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fanta - Portakallı gazlı içecek."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 60 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_fanta"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Sprite -->
+        <ImageView
+            android:id="@+id/sprite_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sprite"
+            android:scaleType="centerCrop"
+            android:contentDescription="Sprite Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sprite - Limonlu gazlı içecek."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 50 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_sprite"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Soda -->
+        <ImageView
+            android:id="@+id/soda_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/soda"
+            android:scaleType="centerCrop"
+            android:contentDescription="Soda Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soda - Doğal maden suyu."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 25 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_soda"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Ayran -->
+        <ImageView
+            android:id="@+id/ayran_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ayran"
+            android:scaleType="centerCrop"
+            android:contentDescription="Ayran Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayran - Yoğurt ve su ile hazırlanmış içecek."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 20 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_ayran"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+        <!-- Çay -->
+        <ImageView
+            android:id="@+id/cay_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cay"
+            android:scaleType="centerCrop"
+            android:contentDescription="Çay Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çay - Geleneksel Türk çayı."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 25 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_cay"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+
+        <!-- Soğuk Çay -->
+        <ImageView
+            android:id="@+id/soguk_cay_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/soguk_cay"
+            android:scaleType="centerCrop"
+            android:contentDescription="Soğuk Çay Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soğuk Çay - Buz gibi serinletici çay."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 45 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_soguk_cay"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Portakal Suyu -->
+        <ImageView
+            android:id="@+id/portakal_suyu_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/portakal_suyu"
+            android:scaleType="centerCrop"
+            android:contentDescription="Portakal Suyu Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portakal Suyu - Taze sıkılmış portakal suyu."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 80 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_portakal_suyu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Limonata -->
+        <ImageView
+            android:id="@+id/limonata_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/limonata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Limonata Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limonata - Ferahlatıcı limonata."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 85 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_limonata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Türk Kahvesi -->
+        <ImageView
+            android:id="@+id/turk_kahvesi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/turk_kahvesi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Türk Kahvesi Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Türk Kahvesi - Geleneksel Türk kahvesi."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 80 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_turk_kahvesi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Latte -->
+        <ImageView
+            android:id="@+id/latte_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/latte"
+            android:scaleType="centerCrop"
+            android:contentDescription="Latte Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte - Sütlü kahve."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 100 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_latte"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Espresso -->
+        <ImageView
+            android:id="@+id/espresso_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/espresso"
+            android:scaleType="centerCrop"
+            android:contentDescription="Espresso Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso - Yoğun kahve."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 90 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_espresso"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Cappuccino -->
+        <ImageView
+            android:id="@+id/cappuccino_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cappuccino"
+            android:scaleType="centerCrop"
+            android:contentDescription="Cappuccino Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cappuccino - Köpüklü kahve."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 120 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_cappuccino"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Elma Suyu -->
+        <ImageView
+            android:id="@+id/elma_suyu_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/elma_suyu"
+            android:scaleType="centerCrop"
+            android:contentDescription="Elma Suyu Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elma Suyu - Taze sıkılmış elma suyu."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 50 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_elma_suyu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_sepetim"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepetim"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+

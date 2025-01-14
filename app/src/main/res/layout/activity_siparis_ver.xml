@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Arka Plan Görseli -->
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/arkaplan1"
+        android:scaleType="centerCrop"
+        android:contentDescription="Arka Plan Görseli" />
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/tv_menu_title"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:text="           MENÜ"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white" />
+
+    <!-- Container for Buttons -->
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp">
+
+        <Button
+            android:id="@+id/btn_tatlilar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Tatlılar"
+            android:layout_marginStart="60dp"/>
+
+        <Button
+            android:id="@+id/btn_salatalar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Salatalar"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="60dp"/>
+
+        <Button
+            android:id="@+id/btn_aperatifler"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Aperatifler"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="60dp"/>
+
+        <Button
+            android:id="@+id/btn_ana_yemekler"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Ana Yemekler"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="60dp"/>
+
+        <Button
+            android:id="@+id/btn_icecekler"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="İçecekler"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="60dp"/>
+    </LinearLayout>
+</RelativeLayout>

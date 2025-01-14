@@ -1,0 +1,340 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salatalar"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Caesar Salata -->
+        <ImageView
+            android:id="@+id/caesar_salata_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/caesar_salata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Caesar Salata Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caesar Salata - Taze yeşilliklerle hazırlanmış klasik salata."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 150 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_caesar_salata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Çoban Salata -->
+        <ImageView
+            android:id="@+id/coban_salata_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/coban_salata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Çoban Salata Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çoban Salata - Domates, salatalık, biber ve soğan ile hazırlanmış taze salata."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 120 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_coban_salata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Greek Salata -->
+        <ImageView
+            android:id="@+id/greek_salata_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/greek_salata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Greek Salata Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Greek Salata - Feta peyniri, zeytin ve taze sebzelerle hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 140 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_greek_salata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Roka Salata -->
+        <ImageView
+            android:id="@+id/roka_salata_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/roka_salata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Roka Salata Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roka Salata - Taze roka, domates ve parmesan peyniri ile."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 130 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_roka_salata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Yoğurtlu Havuç Salatası -->
+        <ImageView
+            android:id="@+id/yogurtlu_havuc_salatasi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/yogurtlu_havuc_salatasi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Yoğurtlu Havuç Salatası Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yoğurtlu Havuç Salatası - Yoğurtlu, havuçlu ve sarımsaklı salata."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 130 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_yogurtlu_havuc_salatasi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Patates Salatası -->
+        <ImageView
+            android:id="@+id/patates_salatasi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/patates_salatasi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Patates Salatası Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patates Salatası - Taze patates ve yeşilliklerle hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 120 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_patates_salatasi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Rus Salatası -->
+        <ImageView
+            android:id="@+id/rus_salatasi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/rus_salatasi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Rus Salatası Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rus Salatası - Bezelye, havuç ve patates ile hazırlanan."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 140 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_rus_salatasi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Yumurtalı Salata -->
+        <ImageView
+            android:id="@+id/yumurtali_salata_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/yumurtali_salata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Yumurtalı Salata Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yumurtalı Salata - Haşlanmış yumurta, marul ve yeşillikler ile."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 135 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_yumurtali_salata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Ton Balıklı Salata -->
+        <ImageView
+            android:id="@+id/ton_balikli_salata_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ton_balikli_salata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Ton Balıklı Salata Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ton Balıklı Salata - Taze sebzeler ve ton balığı ile hazırlanan."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 160 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_ton_balikli_salata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Mercimekli Salata -->
+        <ImageView
+            android:id="@+id/mercimekli_salata_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/mercimekli_salata"
+            android:scaleType="centerCrop"
+            android:contentDescription="Mercimekli Salata Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercimekli Salata - Yeşil mercimek ve taze yeşilliklerle hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 140 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_mercimekli_salata"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_sepetim"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepetim"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

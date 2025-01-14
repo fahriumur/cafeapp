@@ -1,0 +1,435 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tatlılar"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Baklava -->
+        <ImageView
+            android:id="@+id/baklava_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/baklava"
+            android:scaleType="centerCrop"
+            android:contentDescription="Baklava Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baklava - Geleneksel Türk tatlısı, çıtır hamur ve fıstık dolgulu."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 225 TL"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_baklava"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Künefe -->
+        <ImageView
+            android:id="@+id/kunefe_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kunefe"
+            android:scaleType="centerCrop"
+            android:contentDescription="Künefe Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Künefe - Kadayıf ve peynir ile yapılan sıcak tatlı, üzerine şerbet dökülür."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 230 TL"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_kunefe"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Kazandibi -->
+        <ImageView
+            android:id="@+id/kazandibi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kazandibi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Kazandibi Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kazandibi - Tavuk göğsü tatlısının karamelize edilmiş hali."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 220 TL"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_kazandibi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Sütlaç -->
+        <ImageView
+            android:id="@+id/sutlac_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sutlac"
+            android:scaleType="centerCrop"
+            android:contentDescription="Sütlaç Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sütlaç - Fırınlanmış sütlaç, üzerine tarçın serpilir."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 215 TL"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_sutlac"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Frambuazlı Cheesecake -->
+        <ImageView
+            android:id="@+id/frambuazli_cheesecake_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cheescakeframbuazli"
+            android:scaleType="centerCrop"
+            android:contentDescription="Frambuazlı Cheesecake Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frambuazlı Cheesecake - Frambuazlı sos ile kaplanmış nefis cheesecake."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 250 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_frambuazli_cheesecake"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Limonlu Cheesecake -->
+        <ImageView
+            android:id="@+id/limonlu_cheesecake_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cheescakelimonlu"
+            android:scaleType="centerCrop"
+            android:contentDescription="Limonlu Cheesecake Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limonlu Cheesecake - Taze limon aromalı, ferahlatıcı cheesecake."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 255 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_limonlu_cheesecake"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Mozaik Pasta -->
+        <ImageView
+            android:id="@+id/mozaik_pasta_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/mozaikpasta"
+            android:scaleType="centerCrop"
+            android:contentDescription="Mozaik Pasta Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mozaik Pasta - Çikolatalı, bisküvili klasik mozaik pasta."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 260 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_mozaik_pasta"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Tiramisu -->
+        <ImageView
+            android:id="@+id/tiramisu_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tiramisu"
+            android:scaleType="centerCrop"
+            android:contentDescription="Tiramisu Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiramisu - İtalyan kahve ve kakao aromalı yumuşak tatlı."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 265 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_tiramisu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Profiterol -->
+        <ImageView
+            android:id="@+id/profiterol_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/profiterol"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profiterol Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profiterol - Çikolata sosu ile kaplanmış nefis profiterol topları."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 270 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_profiterol"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- San Sebastian Cheesecake -->
+        <ImageView
+            android:id="@+id/san_sebastian_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sansebastian"
+            android:scaleType="centerCrop"
+            android:contentDescription="San Sebastian Cheesecake Görseli"
+            android:layout_marginBottom="16dp" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="San Sebastian Cheesecake - Kremalı ve yumuşak dokulu cheesecake."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 230 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_add_san_sebastian"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Magnolia Pudding -->
+        <ImageView
+            android:id="@+id/magnolia_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/magnolia"
+            android:scaleType="centerCrop"
+            android:contentDescription="Magnolia Pudding Görseli"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Magnolia Pudding - Çilekli veya muzlu puding, bisküvi katmanları ile."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 200 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_add_magnolia"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Trileçe -->
+        <ImageView
+            android:id="@+id/trilece_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/trilece"
+            android:scaleType="centerCrop"
+            android:contentDescription="Trileçe Görseli"
+            android:layout_marginBottom="16dp" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trileçe - Üç farklı süt ile yapılan hafif tatlı."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 210 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_add_trilece"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Supangle -->
+        <ImageView
+            android:id="@+id/supangle_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/supangle"
+            android:scaleType="centerCrop"
+            android:contentDescription="Supangle Görseli"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supangle - Çikolatalı ve sünger kek parçaları ile."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 200 TL"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_add_supangle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_sepetim"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepetim"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,403 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aperatifler"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Sigara Böreği -->
+        <ImageView
+            android:id="@+id/sigara_boregi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sigara_boregi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Sigara Böreği Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sigara Böreği - İnce hamur içerisine peynirli dolgu."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 50 TL"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_sigara_boregi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Patates Kızartması -->
+        <ImageView
+            android:id="@+id/patates_kizartmasi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/patates_kizartmasi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Patates Kızartması Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patates Kızartması - Taze patateslerle hazırlanmış kızartma."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 45 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_patates_kizartmasi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Soğan Halkası -->
+        <ImageView
+            android:id="@+id/sogan_halkasi_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sogan_halkasi"
+            android:scaleType="centerCrop"
+            android:contentDescription="Soğan Halkası Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soğan Halkası - Kızarmış soğan halkaları."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 40 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_sogan_halkasi"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Mozzarella Sticks -->
+        <ImageView
+            android:id="@+id/mozzarella_sticks_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/mozzarella_sticks"
+            android:scaleType="centerCrop"
+            android:contentDescription="Mozzarella Sticks Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mozzarella Sticks - Kızartılmış mozzarella peynir çubukları."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 55 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_mozzarella_sticks"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Nuggets -->
+        <ImageView
+            android:id="@+id/nuggets_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/nuggets"
+            android:scaleType="centerCrop"
+            android:contentDescription="Nuggets Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuggets - Kızartılmış tavuk parçaları."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 60 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_nuggets"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Tavuk Kanat -->
+        <ImageView
+            android:id="@+id/tavuk_kanat_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/tavuk_kanat"
+            android:scaleType="centerCrop"
+            android:contentDescription="Tavuk Kanat Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tavuk Kanat - Kızartılmış tavuk kanatları."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 70 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_tavuk_kanat"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+
+        <!-- Hummus -->
+        <ImageView
+            android:id="@+id/hummus_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/hummus"
+            android:scaleType="centerCrop"
+            android:contentDescription="Hummus Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hummus - Nohut, tahin ve zeytinyağı ile hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 50 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_hummus"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+         <!-- Haydari -->
+        <ImageView
+            android:id="@+id/haydari_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/haydari"
+            android:scaleType="centerCrop"
+            android:contentDescription="Haydari Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haydari - Yoğurt, sarımsak ve dereotu ile hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 45 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_haydari"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+         <!-- Acılı Ezme -->
+        <ImageView
+            android:id="@+id/acili_ezme_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/acili_ezme"
+            android:scaleType="centerCrop"
+            android:contentDescription="Acılı Ezme Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acılı Ezme - Taze sebzelerle hazırlanmış acılı ezme."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 40 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_acili_ezme"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Muhammara -->
+        <ImageView
+            android:id="@+id/muhammara_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/muhammara"
+            android:scaleType="centerCrop"
+            android:contentDescription="Muhammara Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muhammara - Biber, ceviz ve zeytinyağı ile hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 55 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_muhammara"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Şakşuka -->
+        <ImageView
+            android:id="@+id/saksuka_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/saksuka"
+            android:scaleType="centerCrop"
+            android:contentDescription="Şakşuka Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şakşuka - Patlıcan, biber ve domates ile hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 50 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_saksuka"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Cacık -->
+        <ImageView
+            android:id="@+id/cacik_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cacik"
+            android:scaleType="centerCrop"
+            android:contentDescription="Cacık Görseli"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cacık - Yoğurt, salatalık ve nane ile hazırlanmış."
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiyat: 45 TL"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+        <Button
+            android:id="@+id/btn_add_cacik"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepete Ekle"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/btn_sepetim"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sepetim"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+
+    </LinearLayout>
+</ScrollView>
+

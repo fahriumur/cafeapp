@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Arka Plan Görseli -->
+
+    <!-- Container for all components -->
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_marginTop="-208dp"
+        android:contentDescription="Arka Plan Görseli"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anasayfa" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="516dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="134dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Başlık -->
+
+        <!-- Sipariş Ver Butonu -->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="Yemek Siparişi"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"
+            android:text="Sipariş Ver"
+            android:textColor="@android:color/black" />
+
+        <!-- Sepetim Butonu -->
+        <Button
+            android:id="@+id/btn_sepetim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"
+            android:text="Sepetim"
+            android:textColor="@android:color/black" />
+
+        <!-- Sipariş Durumu Butonu -->
+        <Button
+            android:id="@+id/btn_siparis_durumu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"
+            android:text="Sipariş Durumları"
+            android:textColor="@android:color/black" />
+
+        <!-- Rezervasyon Yap Butonu -->
+
+        <!-- Geçmiş Rezervasyonlarım Butonu -->
+
+
+        <!-- Yönetici Paneli Butonu -->
+        <Button
+            android:id="@+id/btn_yonetici_paneli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"
+            android:text="Yönetici Paneli"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</RelativeLayout>
